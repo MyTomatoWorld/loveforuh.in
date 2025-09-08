@@ -23,12 +23,12 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff5f5;
+      background: #CD5C5C;
       text-align: center;
     }
     header {
       
-      background: tomato;
+      background: #654321;
       color: white;
       padding: 20px;
       position: relative;
@@ -57,7 +57,7 @@ top: 18px;
 left: 6px;
 }
 .header-buttons button{
-background-color: #32CD32;
+background-color:#FFB6C1 ;
 border: none;
 padding: 7px 14px;
 margin-left: 8px;
@@ -70,35 +70,129 @@ font-size: 12px;
 backgroung-color: #FFFFFF;
 color: #32CD32
 }
+/* Emoji background container */
+.emoji-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* stay behind content */
+  pointer-events: none;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 32px;  /* emoji size */
+  opacity: 0.9;
+}
+
+
 </style>
 </head>
 <body>
+<div class="emoji-bg">
+  <!-- Tomatoes -->
+  <div class="emoji" style="top:30%; left:33%;">🍅</div>
+  <div class="emoji" style="top:30%; left:68%;">🍅</div>
+
+  <!-- Cherry Blossom -->
+  <div class="emoji" style="top:15%; left:70%;">🌸</div>
+  <div class="emoji" style="top:80%; left:26%;">🌸</div>
+  <div class="emoji" style="top:56%; left:72%;">🌸</div>
+  
+  <!-- Music -->
+  <div class="emoji" style="top:25%; left:25%;">🎵</div>
+  <div class="emoji" style="top:48%; left:75%;">🎶</div>
+
+  <!-- Cheers -->
+  <div class="emoji" style="top:45%; left:29%;">🍻</div>
+  <div class="emoji" style="top:85%; left:60%;">🥂</div>
+
+  <!-- Football -->
+  <div class="emoji" style="top:80%; left:65%;">⚽</div>
+  <div class="emoji" style="top:74%; left:10%;">💕</div>
+  <div class="emoji" style="top:77%; left:75%;">💕</div>
+
+  <!-- Funny & Sad -->
+  <div class="emoji" style="top:40%; left:65%;">😂</div>
+  <div class="emoji" style="top:55%; left:23%;">😢</div>
+
+  <!-- Writing -->
+  <div class="emoji" style="top:75%; left:38%;">✍️</div>
+  <div class="emoji" style="top:32%; left:17%;">📖</div>
+
+  <!-- Extra fun -->
+  <div class="emoji" style="top:12%; left:80%;">⭐</div>
+  <div class="emoji" style="top:90%; left:30%;">❤️</div>
+  <div class="emoji" style="top:50%; left:90%;">📚</div>
+  <div class="emoji" style="top:65%; left:23%;">🌟</div>
+</div>
+
+
+
+<div class="emoji-bg">
+  <!-- Top Left -->
+  <div class="emoji" style="top:2%; left:2%;">🌸</div>
+  <div class="emoji" style="top:6%; left:8%;">🎵</div>
+
+  <!-- Top Right -->
+  <div class="emoji" style="top:3%; left:92%;">🌺</div>
+  <div class="emoji" style="top:7%; left:85%;">🎶</div>
+
+  <!-- Bottom Left -->
+  <div class="emoji" style="top:92%; left:5%;">🌻</div>
+  <div class="emoji" style="top:88%; left:20%;">🎵</div>
+
+  <!-- Bottom Right -->
+  <div class="emoji" style="top:90%; left:88%;">🌹</div>
+  <div class="emoji" style="top:85%; left:95%;">🎶</div>
+
+  <!-- Middle Scatter -->
+  <div class="emoji" style="top:20%; left:36%;">🌷</div>
+  <div class="emoji" style="top:25%; left:74%;">🎵</div>
+  <div class="emoji" style="top:50%; left:10%;">🌸</div>
+  <div class="emoji" style="top:57%; left:64%;">🎶</div>
+  <div class="emoji" style="top:35%; left:80%;">🌺</div>
+  <div class="emoji" style="top:65%; left:30%;">🎵</div>
+  <div class="emoji" style="top:70%; left:60%;">🌻</div>
+  <div class="emoji" style="top:45%; left:85%;">🎶</div>
+  <div class="emoji" style="top:18%; left:95%;">🌻</div>
+  <div class="emoji" style="top:53%; left:80%;">🌻</div>
+  <div class="emoji" style="top:64%; left:26%;">🌻</div>
+  <div class="emoji" style="top:22%; left:8%;">🌻</div>
+  <div class="emoji" style="top:30%; left:89%;">🌼</div>
+
+
+</div>
 
   <!-- Website Header -->
-  <header>
- Welcome to My Tomato World 🍅
-<!-- Navigation Buttons -->
-<div class="header-buttons">
-  <a href="index.html"><button>Home</button></a>
-  <a href="shayari.html"><button>Shayari</button></a>
-<a href="music.html"><button>Music</button></a>
-  <a href="poetry.html"><button>Poetry</button></a>
-  <a href="sonnet.html"><button>Sonnet</button></a>
-</div>
+  
+       <header>
 
+
+
+    Welcome to My Tomato World 🍅
+<div class="header-buttons">
+<button onclick="alter('Home clicked!')">Home</button>
+<button onclick="alter('Sonnet clicked!')">Sonnet</button>
+<button onclick="alter('Shayariclicked!')">Shayari</button>
+<button onclick="alter('Music clicked!')">Music</button>
+<button onclick="alter('Poetry clicked!')">Poetry</button>
+</div>
 </header>
 
-<div id="shayariDisplay"></div>
   <!-- Main Content -->
-  <p>Hey I am here to share my emotions with you through some shayaries, poetries and have little fun! Hope I manage to make uh feel better!😊.</p>
+  <p>Hey I am here to make uh feel better! 🚀.</p>
 
   <!-- Example image (you can replace with your own later) -->
-  <div style="text-align: center;">
-<img src="myphoto.jpg" alt="tomato">
+  <div style="text-align: centre;">
+<img src="C:Users\HP\Desktop\html\mytomato.jpg" alt="tomato">
 </div>
-<img src="myimage.jpg" alt="cherryblossom">
-<p>This is a mix of love ❤️, learning 📚, and little fun 😄.</p>
-   <p>Let's get closer and spread some happiness!(●'◡'●)☺️.</p>
+
+
+  <p>This is a mix of love ❤️, learning 📚, and little fun 😄.</p>
+   <p>Let's get closer and share some happiness!(●'◡'●)☺️.</p>
   <!-- Footer -->
   <footer>
     © 2025 My Tomato World | Made with love 🍅
@@ -113,9 +207,6 @@ color: #32CD32
 </p>
 </body>
 </html>
-
-
-
 
 
 
