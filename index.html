@@ -74,8 +74,8 @@
 }
 .date-time {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5px;
+  right: 15px;
   background-color: #000000; /* light pink badge */
   color: #FFFFFF;               /* dark text */
   padding: 4px 8px;
@@ -297,7 +297,7 @@ function updateDateTime() {
     day: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit'
+    
   };
   document.getElementById("dateTime").innerText = now.toLocaleDateString("en-IN", options);
 }
@@ -309,6 +309,7 @@ updateDateTime();
 
 </body>
 </html>
+
 
 
 
