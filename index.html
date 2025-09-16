@@ -244,39 +244,6 @@
     document.getElementById("quote").innerText = quotes[randomIndex];
   }
 </script>
-<!-- Random Shayari Feature -->
-<div id="randomShayari" style="margin:20px; padding:15px; background:#fff0f5; border-radius:10px; font-size:18px; color:#444;">
-  ✨ <span id="shayariText">Loading shayari...</span>
-</div>
-
-<button onclick="showRandomShayari()" style="padding:8px 15px; background:tomato; color:white; border:none; border-radius:5px; cursor:pointer;">
-  Some Shayari
-</button>
-
-<br><br>
-<a href="shayari.html" style="text-decoration:none; color:white;">
-  <button style="padding:8px 15px; background:green; color:white; border:none; border-radius:5px; cursor:pointer;">
-    🌸 See More Shayaris
-  </button>
-</a>
-
-<script>
-  const shayaris = [
-    "तेरी यादों का सहारा है मेरा जीना।",
-    "कुछ बातें दिल में रह जाती हैं, लफ़्ज़ों में नहीं।",
-    "तन्हाइयों में भी वो पास होते हैं, जो दिल के खास होते हैं।",
-    "तेरे बिना ये दिल अधूरा है।",
-    "पलकों पे बसा लिया है तुझको।"
-  ];
-
-  function showRandomShayari() {
-    const randomIndex = Math.floor(Math.random() * shayaris.length);
-    document.getElementById("shayariText").innerText = shayaris[randomIndex];
-  }
-
-  // Show one shayari on page load
-  window.onload = showRandomShayari;
-</script>
 
 
   <!-- Footer -->
@@ -313,6 +280,7 @@ updateDateTime();
 
 </body>
 </html>
+
 
 
 
